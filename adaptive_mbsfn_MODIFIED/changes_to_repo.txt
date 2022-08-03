@@ -1,0 +1,2 @@
+1. added srsenb/network_components => client.cpp contains the function to sendToServer
+2. path: srsenb/src/stack/mac/mac.cc => modified line 892-894 + new include headerline
