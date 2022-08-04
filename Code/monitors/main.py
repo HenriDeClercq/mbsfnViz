@@ -26,4 +26,4 @@ if __name__ == "__main__":
     parser.add_argument('--sleepTime', type = float, required=False, default = 0.1,
                         help='time to sleep between frames')
     args = parser.parse_args()
-    main(monitorType = args.monitorType, fileName=args.fileName, columnToPlot=args.columnToPlot, horizontalWindowSize = args.horizontalWindowSize, sleepTime = args.sleepTime) 
+    main(monitorType = args.monitorType, fileName=args.filename, columnToPlot=args.columnToPlot, horizontalWindowSize = args.horizontalWindowSize, sleepTime = args.sleepTime) 
