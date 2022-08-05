@@ -23,7 +23,7 @@ if __name__ == "__main__":
                         help='choose: "SF_ALLOC" or "SF_PERIOD"')
     parser.add_argument('--horizontalWindowSize', type = int, required=False, default = 20,
                         help='the width of the window x axis')
-    parser.add_argument('--sleepTime', type = float, required=False, default = 0.64,
+    parser.add_argument('--sleepTime', type = float, required=False, default = 0.1,
                         help='time to sleep between frames')
     args = parser.parse_args()
     main(monitorType = args.monitorType, fileName=args.filename, columnToPlot=args.columnToPlot, horizontalWindowSize = args.horizontalWindowSize, sleepTime = args.sleepTime) 
