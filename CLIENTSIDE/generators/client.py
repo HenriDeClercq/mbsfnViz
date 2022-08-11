@@ -54,7 +54,7 @@ if __name__ == "__main__":
                         help='time between sending new rowes')
     parser.add_argument('--portOfServer', type=int, required=False, default= 10000,
                         help='time between sending new rowes')
-    parser.add_argument('--sleeptime', type=float, required=False, default= 0.5,
+    parser.add_argument('--sleeptime', type=float, required=False, default= 0.64,
                         help='time between sending new rowes')
     args = parser.parse_args()
     main(addressOfServer = args.addressOfServer, portOfServer = args.portOfServer, sleeptime = args.sleeptime)
