@@ -1,9 +1,5 @@
-# python 3.6
-
-import random
-import time
-
 from paho.mqtt import client as mqtt_client
+import json
 
 def sendNewParametersToBroker(newParametersToSend, clientID, username, password, addressOfBroker, portOfBroker, topicGroup):
         client = connectToBroker(clientID, username, password, addressOfBroker, portOfBroker)
@@ -39,9 +35,4 @@ def wrapParametersIntoMQTTmsg(newParametersToSend):
     return convertDictionaryToMQTTmsg(DICTmsg)
 
 def convertDictionaryToMQTTmsg(DICTmsg):
-    totalMessage = "{"
-    for parameterName in DICTmsg.keys():
-        parameterKeyValuePair = '"' +  parameterName + '":' + str(DICTmsg[parameterName])
-        totalMessage += parameterKeyValuePair + ","
-    totalMessage = totalMessage[:-1] +  "}" 
-    return totalMessage
+    return json.dumps(DICTmsg)
