@@ -33,7 +33,7 @@ if __name__ == "__main__":
                         help='address of the broker')              
     parser.add_argument('--portOfBroker', type=int, required=False, default= 1883,
                         help='port of the broker')
-    parser.add_argument('--deviceToken', type=int, required=False, default= "CGO0qUUI1BiPOkUhkYy7",
+    parser.add_argument('--deviceToken', type=str, required=False, default= "CGO0qUUI1BiPOkUhkYy7",
                         help='deviceToken of the device')
     parser.add_argument('--topicGroup', type=str, required=False, default= "ThingsViz/telemetry",
                         help='topic to publish on')
