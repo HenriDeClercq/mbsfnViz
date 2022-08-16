@@ -910,7 +910,6 @@ printf("\n******************************************************\n \n");
 string newParameters = std::to_string(mbsfn_sfalloc_new) + "," + std::to_string(mbsfn_period) + "," + std::to_string(yy);
 printf("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 sendParametersToServer(newParameters.c_str());
-sendParametersToMQTTBroker(newParameters.c_str());
 printf("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
