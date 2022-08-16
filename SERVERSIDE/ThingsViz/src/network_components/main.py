@@ -1,8 +1,8 @@
 import argparse
 from server import Server
 
-def main(addressOfBroker, portOfBroker, deviceToken, topicGroup, addressOfServer, portOfServer, sleeptime):
-    generator = Server(addressOfBroker, portOfBroker, deviceToken, topicGroup, addressOfServer, portOfServer, sleeptime)
+def main(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer, sleeptime):
+    generator = Server(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer, sleeptime)
     generator.run()
     
 if __name__ == "__main__":
