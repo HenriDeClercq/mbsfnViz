@@ -1,0 +1,122 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "entities_table",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 7.5,
+    "sizeY": 6.5,
+    "config": {
+      "timewindow": {
+        "realtime": {
+          "interval": 1000,
+          "timewindowMs": 86400000
+        },
+        "aggregation": {
+          "type": "NONE",
+          "limit": 200
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "4px",
+      "settings": {
+        "entitiesTitle": "",
+        "enableSearch": true,
+        "enableSelectColumnDisplay": true,
+        "enableStickyHeader": true,
+        "enableStickyAction": true,
+        "reserveSpaceForHiddenAction": "true",
+        "displayEntityName": true,
+        "entityNameColumnTitle": "",
+        "displayEntityLabel": false,
+        "displayEntityType": true,
+        "displayPagination": true,
+        "defaultPageSize": 10,
+        "defaultSortOrder": "entityName",
+        "useRowStyleFunction": false
+      },
+      "title": "Adaptive NMBS parameters",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "padding": "5px 10px 5px 10px"
+      },
+      "useDashboardTimewindow": false,
+      "showLegend": false,
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "5df758ec-0df1-102a-ab4f-3eab42bab2ae",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "PERCENTAGE",
+              "type": "timeseries",
+              "label": "PERCENTAGE",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.23682578041385338
+            },
+            {
+              "name": "SF_ALLOC",
+              "type": "timeseries",
+              "label": "SF_ALLOC",
+              "color": "#4caf50",
+              "settings": {},
+              "_hash": 0.4411060882751524
+            },
+            {
+              "name": "SF_PERIOD",
+              "type": "timeseries",
+              "label": "SF_PERIOD",
+              "color": "#f44336",
+              "settings": {},
+              "_hash": 0.8371815865217334
+            }
+          ]
+        }
+      ],
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "widgetStyle": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": ""
+    },
+    "row": 0,
+    "col": 0,
+    "id": "772eba45-834b-7907-e5fd-d2ae9bceb10b"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "ThingsViz",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "977173d0-14be-11ed-a4f3-e18569f8430e"
+          ]
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 16,
+    "sizeY": 8
+  },
+  "originalColumns": 24
+}
