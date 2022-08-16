@@ -35,7 +35,10 @@ def wrapParametersIntoMQTTmsg(newParametersToSend):
     SF_ALLOC, SF_PERIOD, PERCENTAGE = newParametersToSend
     DICTparameters = {"SF_ALLOC": SF_ALLOC, "SF_PERIOD": SF_PERIOD, "PERCENTAGE": PERCENTAGE}
     DICTmsg = {"ts": time.mktime(datetime.now().timetuple()), "values": DICTparameters}
-    return convertDictionaryToMQTTmsg(DICTmsg)
+    return convertDictionaryToMQTTmsg(DICTparameters)
+    #TODO: SEND CUSTOM TIMESTAMP IN HEADER #######################################################################
+    #DICTmsg = {"ts": time.mktime(datetime.now().timetuple()), "values": DICTparameters}
+    #return convertDictionaryToMQTTmsg(DICTmsg)
 
 def convertDictionaryToMQTTmsg(DICTmsg):
     return json.dumps(DICTmsg)
