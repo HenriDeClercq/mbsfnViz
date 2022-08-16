@@ -2,8 +2,8 @@ import argparse
 from server import Server
 
 def main(addressOfServer, portOfServer, filename):
-    generator = Server(addressOfServer, portOfServer, filename)
-    generator.run()
+    listener = Server(addressOfServer, portOfServer, filename)
+    listener.run()
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create a random data generator client')
