@@ -1,5 +1,0 @@
-1. added srsenb/src/stack/mac/network_components/client.cc => client.cc contains the function to sendToServer
-2. path: srsenb/src/stack/mac/mac.cc => modified line 907 - 911 + new include headerline
-3. add network_components/client.cc to cmakelist.txt
-
-REPLACE THE ORIGINAL MAC DIRECTORY WITH THIS ONE
