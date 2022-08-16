@@ -11,7 +11,7 @@ if __name__ == "__main__":
                         help='address of the broker')              
     parser.add_argument('--portOfBroker', type=int, required=False, default= 1883,
                         help='port of the broker')
-    parser.add_argument('--deviceAccessToken', type=str, required=False, default= "pastedeviceaccesstokenhere",
+    parser.add_argument('--deviceAccessToken', type=str, required=False, default= "pasteDeviceAccessTokenHere",
                         help='device access token of the device')
     parser.add_argument('--topicGroup', type=str, required=False, default= "ThingsViz/telemetry",
                         help='topic to publish on')
