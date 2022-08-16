@@ -7,11 +7,11 @@ def main(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOf
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Create a random data generator client')
-    parser.add_argument('--addressOfBroker', type=str, required=False, default= "thingsboard.cloud",
+    parser.add_argument('--addressOfBroker', type=str, required=False, default= "localhost",
                         help='address of the broker')              
     parser.add_argument('--portOfBroker', type=int, required=False, default= 1883,
                         help='port of the broker')
-    parser.add_argument('--deviceAccessToken', type=str, required=False, default= "CGO0qUUI1BiPOkUhkYy7",
+    parser.add_argument('--deviceAccessToken', type=str, required=False, default= "pastedeviceaccesstokenhere",
                         help='device access token of the device')
     parser.add_argument('--topicGroup', type=str, required=False, default= "ThingsViz/telemetry",
                         help='topic to publish on')
