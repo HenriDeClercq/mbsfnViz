@@ -23,6 +23,6 @@ def recieveMessageFromConnectedClient(connection):
 def initiateSocket(addressOfServer, portOfServer):
     newSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_address = (addressOfServer, portOfServer)
-    print("starting up on %s port %s" % server_address)
+    print("Starting up the server on %s port %s" % server_address)
     newSocket.bind(server_address)
     return newSocket
