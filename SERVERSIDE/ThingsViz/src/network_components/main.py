@@ -1,8 +1,8 @@
 import argparse
 from server import Server
 
-def main(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer, sleeptime):
-    listener = Server(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer, sleeptime)
+def main(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer):
+    listener = Server(addressOfBroker, portOfBroker, deviceAccessToken, topicGroup, addressOfServer, portOfServer)
     listener.run()
     
 if __name__ == "__main__":
