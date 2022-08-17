@@ -18,7 +18,7 @@
 #define ADDRESS "127.0.0.1"
 //////////////////////////////////////////////////////////////////
 
-int sendParametersServer(char const* newParameters)
+int sendParametersToServer(char const* newParameters)
 {
     int sock = 0, valread, client_fd;
     struct sockaddr_in serv_addr;
