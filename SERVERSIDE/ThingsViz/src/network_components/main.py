@@ -11,8 +11,8 @@ if __name__ == "__main__":
                         help='address of the broker => localhost or thingsboard.cloud')              
     parser.add_argument('--portOfBroker', type=int, required=False, default= 1883,
                         help='port of the broker')
-    parser.add_argument('--deviceAccessToken, can be found in the devices tab of Thingsboard', type=str, required=False, default= "CGO0qUUI1BiPOkUhkYy7",
-                        help='device access token of the device')
+    parser.add_argument('--deviceAccessToken', type=str, required=False, default= "CGO0qUUI1BiPOkUhkYy7",
+                        help='device access token can be found in the devices tab of Thingsboard')
     parser.add_argument('--topicGroup', type=str, required=False, default= "ThingsViz/telemetry",
                         help='topic to publish on, can be found in the devices profile tab on Thingsboard')
     parser.add_argument('--addressOfServer', type=str, required=False, default= "localhost",
