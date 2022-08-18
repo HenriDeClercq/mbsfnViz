@@ -1,5 +1,4 @@
-# IDLab, 
-visualizing the adaptive mbsfn solution
+# Visualizing the adaptive mbsfn solution
 
 In the CLIENTSIDE directory, a modified mac directory can be found. When replacing the original mac file from the adaptive mbsfn solution, 
 the client will now send the parameters to a socket as well as print them on the terminal as before. 
